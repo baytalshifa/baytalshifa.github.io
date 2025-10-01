@@ -1,0 +1,23 @@
+{
+  "header_title": "Bayt Al Shifa – Thérapie Hijama",
+  "header_subtitle": "La hijama n’est pas un luxe ; elle est nécessaire pour votre santé.",
+  "btn_booking": "Réserve ta séance",
+  "btn_contact": "Contacte-nous",
+  "about_title": "C’est quoi la Hijama ?",
+  "about_text": "La hijama est une des plus anciennes thérapies naturelles. Elle stimule la circulation sanguine, soulage les douleurs, renforce l’immunité et détoxifie le corps. Recommandée par le Prophète ﷺ.",
+  "benefits": [
+    {"emoji":"💪","title":"Renforcer l'immunité","text":"Augmente la résistance aux maladies."},
+    {"emoji":"🩸","title":"Détox du sang","text":"Élimine les toxines et impuretés."},
+    {"emoji":"🧘","title":"Relaxation mentale","text":"Réduit stress et maux de tête, améliore l’humeur."},
+    {"emoji":"⚡","title":"Augmenter l'énergie","text":"Améliore la circulation et la vitalité quotidienne."}
+  ],
+  "why": [
+    {"emoji":"👨‍⚕️","title":"Spécialiste certifié","text":"Supervisé par Kamal Mohamed Al-Adawi – expert en hijama sécurisée."},
+    {"emoji":"🏥","title":"Lieu sûr et confortable","text":"Clinique avec équipements modernes."},
+    {"emoji":"✨","title":"Service pro","text":"Qualité et confidentialité totale."}
+  ],
+  "team": [
+    {"emoji":"👨‍⚕️","name":"Kamal Mohamed Al-Adawi","role":"Spécialiste Hijama"},
+    {"emoji":"👩‍⚕️","name":"Basma","role":"Spécialiste Hijama"}
+  ]
+}
