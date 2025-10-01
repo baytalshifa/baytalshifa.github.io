@@ -1,0 +1,23 @@
+{
+  "header_title": "Bayt Al Shifa – Cupping Therapy",
+  "header_subtitle": "Cupping isn’t a luxury; it’s essential for your health.",
+  "btn_booking": "Book Your Session",
+  "btn_contact": "Get in Touch",
+  "about_title": "What is Cupping?",
+  "about_text": "Cupping is one of the oldest natural therapies that helps stimulate blood circulation, relieve pain, boost immunity, and detoxify the body. Recommended by Prophet ﷺ.",
+  "benefits": [
+    {"emoji":"💪","title":"Boost Immunity","text":"Increase the body's resistance to illnesses."},
+    {"emoji":"🩸","title":"Detox Blood","text":"Remove toxins and impurities from the body."},
+    {"emoji":"🧘","title":"Mental Relaxation","text":"Reduce stress and headaches, improve mood."},
+    {"emoji":"⚡","title":"Increase Energy","text":"Improve circulation and daily energy."}
+  ],
+  "why": [
+    {"emoji":"👨‍⚕️","title":"Certified Specialist","text":"Supervised by specialist Kamal Mohamed Al-Adawi – expert in safe cupping therapy."},
+    {"emoji":"🏥","title":"Comfortable & Safe Place","text":"Clinic equipped with latest medical tools."},
+    {"emoji":"✨","title":"Professional Service","text":"High quality with full privacy."}
+  ],
+  "team": [
+    {"emoji":"👨‍⚕️","name":"Kamal Mohamed Al-Adawi","role":"Cupping Specialist"},
+    {"emoji":"👩‍⚕️","name":"Basma","role":"Cupping Specialist"}
+  ]
+}
