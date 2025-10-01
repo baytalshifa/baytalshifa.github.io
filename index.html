@@ -1,22 +1,212 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>My GitHub Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bayt Al Shifa | بيت الشفاء للحجامة</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      text-align: center;
-      padding: 50px;
-    }
-    h1 {
-      color: #333;
-    }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:'Nunito',sans-serif;background:#fdfdfd;color:#222;overflow-x:hidden;line-height:1.7;}
+  
+  header{
+    height:100vh;
+    background:linear-gradient(135deg,#00B173,#26d7a6);
+    color:white;
+    display:flex;flex-direction:column;justify-content:center;align-items:center;
+    text-align:center;padding:0 1rem;position:relative;overflow:hidden;
+  }
+  header h1{font-size:3rem;font-weight:800;margin-bottom:1rem;}
+  header p{font-size:1.2rem;max-width:600px;opacity:0.9;margin-bottom:2rem;}
+
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:0.5rem;
+    margin:0.5rem;
+    padding:1rem 2.5rem;
+    background:white;
+    color:#00B173;
+    font-weight:700;
+    border-radius:999px;
+    transition:transform 0.2s ease, box-shadow 0.3s ease;
+    position:relative;
+    overflow:hidden;
+    cursor:pointer;
+  }
+  .btn:hover{transform:translateY(-3px) scale(1.05);box-shadow:0 8px 20px rgba(0,0,0,0.15);}
+  .btn:active{transform:scale(0.95);}
+  .btn::after{
+    content:"";
+    position:absolute;
+    top:50%; left:50%;
+    width:0; height:0;
+    background:rgba(0,177,115,0.2);
+    border-radius:50%;
+    transform:translate(-50%,-50%);
+    opacity:0;
+    transition:width 0.5s ease, height 0.5s ease, opacity 0.5s ease;
+  }
+  .btn:active::after{
+    width:200px;
+    height:200px;
+    opacity:1;
+    transition:0s;
+  }
+
+  section{padding:4rem 1rem;max-width:1000px;margin:auto;}
+  section h2{text-align:center;font-size:2rem;margin-bottom:2rem;color:#00B173;}
+  .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;}
+  .card{background:white;border-radius:20px;padding:2rem;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,0.05);transition:0.3s;opacity:0;transform:translateY(20px);}
+  .card.show{opacity:1;transform:translateY(0);}
+  .card:hover{transform:translateY(-10px);box-shadow:0 12px 30px rgba(0,0,0,0.1);}
+  .card span{font-size:2.5rem;display:block;margin-bottom:1rem;transition:transform 0.5s;}
+  .card:hover span{animation:jiggle 0.6s infinite;}
+  @keyframes jiggle{0%{transform:rotate(0deg);}25%{transform:rotate(10deg);}50%{transform:rotate(-10deg);}75%{transform:rotate(10deg);}100%{transform:rotate(0deg);}}
+
+  form{display:flex;flex-direction:column;gap:1rem;max-width:500px;margin:2rem auto;}
+  input,textarea{padding:0.8rem;border-radius:10px;border:1px solid #ccc;font-size:1rem;}
+  footer{text-align:center;padding:2rem;color:#555;background:#f7f7f7;}
+  footer a{color:#00B173;font-weight:bold;text-decoration:none;}
   </style>
 </head>
 <body>
-  <h1>Welcome to My GitHub Page 🚀</h1>
-  <p>This is my personal website hosted on GitHub Pages.</p>
+
+<!-- Language Selector -->
+<div style="text-align:center;margin:1rem;">
+  <select id="language">
+    <option value="ar">العربية</option>
+    <option value="ar-kw">الكويتية</option>
+    <option value="ar-eg">المصرية</option>
+    <option value="ar-dz">الجزائرية</option>
+    <option value="en-us">English (US)</option>
+    <option value="en-uk">English (UK)</option>
+    <option value="en-ca">English (CA)</option>
+    <option value="fr-fr">Français (FR)</option>
+    <option value="fr-dz">Français (DZ)</option>
+  </select>
+</div>
+
+<header>
+  <h1>Bayt Al Shifa – بيت الشفاء للحجامة</h1>
+  <p>الحجامة مش رفاهية، إنها ضرورة لصحتك.</p>
+  <div>
+    <button class="btn">احجز جلستك الآن</button>
+    <button class="btn">تواصل معنا</button>
+  </div>
+</header>
+
+<section id="about">
+  <h2>ما هي الحجامة؟</h2>
+  <p>الحجامة من أقدم طرق العلاج الطبيعية التي تساعد على تنشيط الدورة الدموية، تخفيف الآلام، تقوية المناعة، وتنقية الجسم من السموم. سنة نبوية وأوصى بها النبي ﷺ.</p>
+</section>
+
+<section id="benefits">
+  <h2>فوائد الحجامة</h2>
+  <div class="features"></div>
+</section>
+
+<section id="why-us">
+  <h2>لماذا تختارنا؟</h2>
+  <div class="features"></div>
+</section>
+
+<section id="our-team">
+  <h2>فريقنا</h2>
+  <div class="features"></div>
+</section>
+
+<section id="booking">
+  <h2>احجز جلستك</h2>
+  <form action="mailto:baytalshifa.kw@gmail.com" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="الاسم الكامل" required>
+    <input type="tel" name="phone" placeholder="رقم الهاتف" required>
+    <textarea name="message" rows="4" placeholder="ملاحظاتك (اختياري)"></textarea>
+    <button type="submit">إرسال الطلب</button>
+  </form>
+</section>
+
+<section id="contact">
+  <h2>تواصل معنا</h2>
+  <div style="text-align:center;max-width:800px;margin:auto;">
+    <p><strong>📍 العنوان:</strong> حولي – شارع بيروت – بجوار مستشفى دار الشفاء – أعلى موقع أرابياتا</p>
+    <p><strong>📞 الهاتف:</strong> 
+      <a href="tel:+96550901403">+965 50901403</a> | 
+      <a href="tel:+96569912947">+965 69912947</a>
+    </p>
+    <p><strong>💬 واتساب:</strong> 
+      <a href="https://wa.me/96550901403" target="_blank">+965 50901403</a> | 
+      <a href="https://wa.me/96569912947" target="_blank">+965 69912947</a>
+    </p>
+    <p><strong>📧 الإيميل:</strong> 
+      <a href="mailto:baytalshifa.kw@gmail.com">baytalshifa.kw@gmail.com</a>
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p>تم التطوير بواسطة <a href="https://github.com/montry-team" target="_blank">Montry™</a></p>
+</footer>
+
+<script>
+const selectLang = document.getElementById('language');
+
+async function loadLanguage(lang){
+  const res = await fetch(`lang/${lang}.json`);
+  const data = await res.json();
+
+  // Header
+  document.querySelector('header h1').textContent = data.header_title;
+  document.querySelector('header p').textContent = data.header_subtitle;
+  document.querySelectorAll('.btn')[0].textContent = data.btn_booking;
+  document.querySelectorAll('.btn')[1].textContent = data.btn_contact;
+
+  // About
+  document.querySelector('#about h2').textContent = data.about_title;
+  document.querySelector('#about p').textContent = data.about_text;
+
+  // Benefits
+  const benefitsContainer = document.querySelector('#benefits .features');
+  benefitsContainer.innerHTML = '';
+  data.benefits.forEach(b => {
+    benefitsContainer.innerHTML += `<div class="card"><span>${b.emoji}</span><h3>${b.title}</h3><p>${b.text}</p></div>`;
+  });
+
+  // Why Us
+  const whyContainer = document.querySelector('#why-us .features');
+  whyContainer.innerHTML = '';
+  data.why.forEach(w => {
+    whyContainer.innerHTML += `<div class="card"><span>${w.emoji}</span><h3>${w.title}</h3><p>${w.text}</p></div>`;
+  });
+
+  // Team
+  const teamContainer = document.querySelector('#our-team .features');
+  teamContainer.innerHTML = '';
+  data.team.forEach(t => {
+    teamContainer.innerHTML += `<div class="card"><span>${t.emoji}</span><h3>${t.name}</h3><p>${t.role}</p></div>`;
+  });
+
+  // Adjust direction
+  document.body.dir = lang.startsWith('ar') ? 'rtl' : 'ltr';
+
+  // Animate cards
+  const cards = document.querySelectorAll('.card');
+  const trigger = window.innerHeight * 0.9;
+  cards.forEach(card => {
+    const top = card.getBoundingClientRect().top;
+    if(top < trigger) card.classList.add('show');
+    else card.classList.remove('show');
+  });
+}
+
+selectLang.addEventListener('change', e => loadLanguage(e.target.value));
+
+// Load default
+loadLanguage(selectLang.value);
+</script>
+
 </body>
 </html>
