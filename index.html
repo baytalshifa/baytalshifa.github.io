@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -91,6 +92,35 @@ section h2{text-align:center;font-size:2rem;margin-bottom:2rem;color:#00B173;}
 }
 .card:hover{transform:translateY(-10px);box-shadow:0 12px 30px rgba(0,0,0,0.1);}
 .card span{font-size:2.5rem;display:block;margin-bottom:1rem;}
+
+
+ /* Sections */
+  section{padding:4rem 1rem;max-width:1000px;margin:auto;}
+  section h2{text-align:center;font-size:2rem;margin-bottom:2rem;color:#00B173;}
+
+  .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;}
+  .card{
+    background:white;border-radius:20px;padding:2rem;text-align:center;
+    box-shadow:0 6px 20px rgba(0,0,0,0.05);transition:0.3s;
+  }
+  .card:hover{transform:translateY(-10px);box-shadow:0 12px 30px rgba(0,0,0,0.1);}
+  .card span{font-size:2.5rem;display:block;margin-bottom:1rem;}
+
+  /* Booking form */
+  form{display:flex;flex-direction:column;gap:1rem;max-width:500px;margin:2rem auto;}
+  input,textarea{
+    padding:0.8rem;border-radius:10px;border:1px solid #ccc;font-size:1rem;
+  }
+  button{
+    padding:1rem;border:none;border-radius:999px;
+    background:#00B173;color:white;font-size:1rem;font-weight:bold;cursor:pointer;
+    transition:0.3s;
+  }
+  button:hover{background:#00DB8E;}
+
+  footer{text-align:center;padding:2rem;color:#555;}
+
+
 </style>
 </head>
 <body>
@@ -226,15 +256,17 @@ window.addEventListener('scroll', ()=>{
   </form>
 </section>
 
+
+<section id="contact">
+  <h2>تواصل معنا</h2>
 <footer>
  <div class="social-icons">
     <a href="https://youtube.com/@baytalshifa" class="youtube" target="_blank"><i class="fab fa-youtube"></i></a>
     <a href="https://www.tiktok.com/@baytalshifa" class="tiktok" target="_blank"><i class="fab fa-tiktok"></i></a>
     <a href="https://instagram.com/@baytalshifa" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://x.com/@baytalshifa" class="x-hover" target="_blank"><i class="fab fa-x-twitter"></i></a>
+    <a href="https://x.com/baytalshifa" class="x" target="_blank"><i class="fab fa-x"></i></a>
     <a href="https://discord.com/@baytalshifa" class="discord" target="_blank"><i class="fab fa-discord"></i></a>
     <a href="https://facebook.com/@baytalshifa" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
-    <a href="https://linkedin.com/@baytalshifa" class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
     <a href="https://wa.me/96550901403" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
     <a href="mailto:baytalshifa.kw@gmail.com" class="email" target="_blank"><i class="fas fa-envelope"></i></a>
   </div>
@@ -258,7 +290,7 @@ window.addEventListener('scroll', ()=>{
 .social-icons a.youtube:hover{color:#FF0000;}
 .social-icons a.tiktok:hover{color:#69C9D0;}
 .social-icons a.instagram:hover{color:#C13584;}
-.social-icons a.x-hover:hover{color:#1DA1F2;}
+.social-icons a.x:hover{color:#00000;}
 .social-icons a.discord:hover{color:#7289DA;}
 .social-icons a.facebook:hover{color:#1877F2;}
 .social-icons a.linkedin:hover{color:#0A66C2;}
@@ -266,9 +298,6 @@ window.addEventListener('scroll', ()=>{
 .social-icons a.email:hover{color:#FF69B4;}
 </style>
 
-
-<section id="contact">
-  <h2>تواصل معنا</h2>
   <div style="text-align:center;max-width:800px;margin:auto;">
     <p><strong>📍 العنوان:</strong> حولي – شارع بيروت – بجوار مستشفى دار الشفاء – أعلى موقع أرابياتا</p>
     <p><strong>📞 الهاتف:</strong> 
@@ -282,13 +311,15 @@ window.addEventListener('scroll', ()=>{
     <p><strong>📧 الإيميل:</strong> 
       <a href="mailto:baytalshifa.kw@gmail.com">baytalshifa.kw@gmail.com</a>
     </p>
+
+<footer>
+  <p> 2025 Bayt Al Shifa – بيت الشفاء للحجامة </p>
+  <p>تم تطوير هذا الموقع بواسطة <a href="https://github.com/montry-team" target="_blank"><span style="color: #00AE72;"></strong>Montry™</strong></span></a></p>
+</footer>
+
   </div>
 </section>
 
-<footer>
-  <p>© 2025 Bayt Al Shifa – بيت الشفاء للحجامة. جميع الحقوق محفوظة.</p>
-  <p>تم التطوير بواسطة <a href="https://github.com/montry-team" target="_blank">Montry™</a></p>
-</footer>
 
 <script>
 const cards = document.querySelectorAll('.card');
