@@ -1,0 +1,358 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bayt Al Shifa | بيت الشفاء للحجامة</title>
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css" />
+
+  <style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:'Nunito',sans-serif;background:#fdfdfd;color:#222;overflow-x:hidden;line-height:1.7;}
+  a{text-decoration:none;color:inherit;}
+  img{max-width:100%;display:block;}
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bayt Al Shifa – بيت الشفاء للحجامة</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Nunito',sans-serif;background:#fdfdfd;color:#222;overflow-x:hidden;line-height:1.7;}
+
+header{
+  position:fixed;top:0;left:0;width:100%;
+  height:100vh;
+  background:linear-gradient(135deg,#00B173,#26d7a6);
+  color:white;
+  display:flex;flex-direction:column;justify-content:center;align-items:center;
+  text-align:center;
+  padding:0 2rem;
+  overflow:hidden;
+  z-index:1000;
+  transition:all 0.1s linear;
+}
+
+/* Floating shapes */
+.floating{
+  position:absolute;
+  border-radius:50%;
+  opacity:0.15;
+  pointer-events:none;
+}
+.floating.small{width:50px;height:50px;background:#FFCDD2;}
+.floating.medium{width:100px;height:100px;background:#EF9A9A;}
+.floating.large{width:200px;height:200px;background:#FF8A80;}
+
+
+header h1{
+  font-size:4rem;
+  font-weight:800;
+  margin-bottom:1rem;
+  transition:all 0.2s ease;
+}
+
+header .btn-container{
+  display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;
+  transition:all 0.2s ease;
+}
+
+header .btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  gap:0.5rem;
+  padding:1rem 2.5rem;
+  margin:0.3rem;
+  background:white;
+  color:#00B173;
+  font-weight:700;
+  font-size:1.2rem;
+  border-radius:999px;
+  text-decoration:none;
+  transition:all 0.3s ease;
+}
+header .btn:hover{transform:translateY(-3px) scale(1.05);box-shadow:0 8px 20px rgba(0,0,0,0.15);}
+header .btn:active{transform:scale(0.95);}
+
+main{padding-top:100vh;}
+section{padding:4rem 1rem;max-width:1000px;margin:auto;}
+section h2{text-align:center;font-size:2rem;margin-bottom:2rem;color:#00B173;}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;}
+.card{
+  background:white;border-radius:20px;padding:2rem;text-align:center;
+  box-shadow:0 6px 20px rgba(0,0,0,0.05);transition:0.3s;
+}
+.card:hover{transform:translateY(-10px);box-shadow:0 12px 30px rgba(0,0,0,0.1);}
+.card span{font-size:2.5rem;display:block;margin-bottom:1rem;}
+
+
+ /* Sections */
+  section{padding:4rem 1rem;max-width:1000px;margin:auto;}
+  section h2{text-align:center;font-size:2rem;margin-bottom:2rem;color:#00B173;}
+
+  .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;}
+  .card{
+    background:white;border-radius:20px;padding:2rem;text-align:center;
+    box-shadow:0 6px 20px rgba(0,0,0,0.05);transition:0.3s;
+  }
+  .card:hover{transform:translateY(-10px);box-shadow:0 12px 30px rgba(0,0,0,0.1);}
+  .card span{font-size:2.5rem;display:block;margin-bottom:1rem;}
+
+  /* Booking form */
+  form{display:flex;flex-direction:column;gap:1rem;max-width:500px;margin:2rem auto;}
+  input,textarea{
+    padding:0.8rem;border-radius:10px;border:1px solid #ccc;font-size:1rem;
+  }
+  button{
+    padding:1rem;border:none;border-radius:999px;
+    background:#00B173;color:white;font-size:1rem;font-weight:bold;cursor:pointer;
+    transition:0.3s;
+  }
+  button:hover{background:#00DB8E;}
+
+  footer{text-align:center;padding:2rem;color:#555;}
+
+
+</style>
+</head>
+<body>
+
+<header id="main-header">
+<img src="assets/icon.png" alt="Bayt Al Shifa Logo" width="120" style="border-radius:24px;margin-bottom:2rem;">
+  <h1 id="logo">Bayt Al Shifa – بيت الشفاء للحجامة</h1>
+  <div class="btn-container" id="header-buttons">
+    <a href="#booking" class="btn">احجز جلستك الآن</a>
+    <a href="#contact" class="btn">تواصل معنا</a>
+  </div>
+
+  <!-- Floating shapes -->
+  <div class="floating small"></div>
+  <div class="floating medium"></div>
+  <div class="floating large"></div>
+</header>
+
+<main>
+  <section id="about">
+    <h2>ما هي الحجامة؟</h2>
+    <p style="text-align:center;max-width:800px;margin:auto;">
+      الحجامة من أقدم طرق العلاج الطبيعية التي تساعد على تنشيط الدورة الدموية،
+      تخفيف الآلام، تقوية المناعة، وتنقية الجسم من السموم.
+    </p>
+  </section>
+
+  <section id="benefits">
+    <h2>فوائد الحجامة</h2>
+    <div class="features">
+      <div class="card"><span>💪</span><h3>تقوية المناعة</h3><p>زيادة مقاومة الجسم ضد الأمراض.</p></div>
+      <div class="card"><span>🩸</span><h3>تنقية الدم</h3><p>تخليص الجسم من السموم والشوائب.</p></div>
+      <div class="card"><span>🧘</span><h3>راحة نفسية</h3><p>تخفيف التوتر وتحسين المزاج.</p></div>
+    </div>
+  </section>
+</main>
+
+<script>
+const header = document.getElementById('main-header');
+const logo = document.getElementById('logo');
+const btns = document.querySelectorAll('.btn');
+const btnContainer = document.getElementById('header-buttons');
+
+window.addEventListener('scroll', ()=>{
+  const maxScroll = 300; // أقصى مسافة للانكماش
+  let scrollY = window.scrollY;
+  if(scrollY > maxScroll) scrollY = maxScroll;
+
+  // نسبة التمرير
+  let progress = scrollY / maxScroll;
+
+  // ارتفاع الهيدر يتدرج
+  let newHeight = (100 - (progress * 90)) + "vh";
+  if(progress === 1) newHeight = "70px";
+  header.style.height = newHeight;
+
+  // حجم العنوان
+  let newFont = 4 - (progress * 2.5);
+  logo.style.fontSize = newFont + "rem";
+
+  // حجم الأزرار (padding + font-size)
+  let btnFont = 1.2 - (progress * 0.4);
+  let btnPadY = 1 - (progress * 0.5);
+  let btnPadX = 2.5 - (progress * 1.0);
+
+  btns.forEach(btn=>{
+    btn.style.fontSize = btnFont + "rem";
+    btn.style.padding = btnPadY + "rem " + btnPadX + "rem";
+  });
+
+  // تغيير الاتجاه تدريجياً
+  if(progress < 0.7){
+    header.style.flexDirection = "column";
+    header.style.justifyContent = "center";
+    header.style.alignItems = "center";
+    logo.style.marginBottom = "1rem";
+    btnContainer.style.justifyContent = "center";
+  } else {
+    header.style.flexDirection = "row";
+    header.style.justifyContent = "space-between";
+    header.style.alignItems = "center";
+    logo.style.marginBottom = "0";
+    btnContainer.style.justifyContent = "flex-start";
+  }
+});
+</script>
+
+</body>
+
+<section id="islamic-benefits">
+  <h2>الحجامة في الإسلام</h2>
+  <p style="text-align:center;max-width:800px;margin:auto;">
+    أوصى النبي ﷺ بالحجامة لما لها من فوائد عظيمة للجسم والعقل، فقال: 
+    <span style="color:#00B173; font-weight:bold;">«خير ما تداويتم به الحجامة»</span> [رواه البخاري ومسلم].<br>
+    كما ورد في القرآن الكريم: 
+    <span style="color:#FF69B4; font-weight:bold;">«وَفِي أَنفُسِكُمْ أَفَلَا تُبْصِرُونَ»</span> (الذاريات: 21)،
+    أي أن الله خلق الجسم بطريقة تسمح بالعلاج والتنظيف الطبيعي، والحجامة من طرق تنقية الدم وتنشيط الدورة الدموية.
+  </p>
+  <div class="features">
+    <div class="card"><span>🕋</span><h3>سنة نبوية</h3><p>الحجامة سنة مستحبة وموصى بها.</p></div>
+    <div class="card"><span>💉</span><h3>تنقية الجسم</h3><p>تساعد على إخراج الدم الفاسد وتنشيط الدورة الدموية.</p></div>
+    <div class="card"><span>🧘‍♂️</span><h3>راحة نفسية</h3><p>تخفيف التوتر وتحسين المزاج.</p></div>
+  </div>
+</section>
+
+<section id="why-us">
+  <h2>لماذا تختارنا؟</h2>
+  <div class="features">
+    <div class="card"><span>👨‍⚕️</span><h3>أخصائي معتمد</h3><p>بإشراف الأخصائي <strong>كمال محمد العدوي</strong> – خبرة في العلاج بالحجامة في بيئة آمنة واحترافية.</p></div>
+    <div class="card"><span>🏥</span><h3>مكان مريح وآمن</h3><p>عيادة مجهزة بأحدث الأدوات الطبية.</p></div>
+    <div class="card"><span>✨</span><h3>خدمة احترافية</h3><p>جودة عالية وخصوصية تامة لراحتكم.</p></div>
+  </div>
+
+</section>
+<section id="our-team">
+  <h2>فريقنا</h2>
+  <div class="features">
+    <div class="card">
+      <img src="assets/our-team-images/kamal.jpg" alt="كمال محمد العدوي" style="border-radius:20px;width:100%;height:auto;margin-bottom:1rem;">
+      <h3>كمال محمد العدوي</h3>
+      <p>أخصائي حجامة</p>
+    </div>
+  </div>
+</section>
+
+<section id="booking">
+  <h2>احجز جلستك</h2>
+  <form action="mailto:baytalshifa.kw@gmail.com" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="الاسم الكامل" required>
+    <input type="tel" name="phone" placeholder="رقم الهاتف" required>
+    <textarea name="message" rows="4" placeholder="ملاحظاتك (اختياري)"></textarea>
+    <button type="submit">إرسال الطلب</button>
+  </form>
+</section>
+
+
+<section id="contact">
+  <h2>تواصل معنا</h2>
+<footer>
+ <div class="social-icons">
+    <a href="https://youtube.com/@baytalshifa" class="youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.tiktok.com/@baytalshifa" class="tiktok" target="_blank"><i class="fab fa-tiktok"></i></a>
+    <a href="https://instagram.com/@baytalshifa" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://x.com/baytalshifa" class="x" target="_blank"><i class="fab fa-x"></i></a>
+    <a href="https://discord.gg/EqTFZCg5hV" class="discord" target="_blank"><i class="fab fa-discord"></i></a>
+    <a href="https://facebook.com/@baytalshifa" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://wa.me/96550901403" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="mailto:baytalshifa.kw@gmail.com" class="email" target="_blank"><i class="fas fa-envelope"></i></a>
+  </div>
+<footer>
+<style>
+.social-icons{
+  display:flex;
+  gap:1rem;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin-top:1rem;
+}
+.social-icons a{
+  font-size:1.8rem;
+  color:#222; /* اللون الافتراضي */
+  transition:0.3s;
+}
+.social-icons a:hover{transform:rotate(15deg);}
+
+/* ألوان عند المرور بالماوس */
+.social-icons a.youtube:hover{color:#FF0000;}
+.social-icons a.tiktok:hover{color:#69C9D0;}
+.social-icons a.instagram:hover{color:#C13584;}
+.social-icons a.x:hover{color:#00000;}
+.social-icons a.discord:hover{color:#7289DA;}
+.social-icons a.facebook:hover{color:#1877F2;}
+.social-icons a.linkedin:hover{color:#0A66C2;}
+.social-icons a.whatsapp:hover{color:#25D366;}
+.social-icons a.email:hover{color:#FF69B4;}
+</style>
+
+  <div style="text-align:center;max-width:800px;margin:auto;">
+    <p><strong>📍 العنوان:</strong> حولي – شارع بيروت – بجوار مستشفى دار الشفاء – أعلى موقع أرابياتا</p>
+    <p><strong>📞 الهاتف:</strong> 
+      <a href="tel:+96550901403">+965 50901403</a> | 
+      <a href="tel:+96569912947">+965 69912947</a>
+    </p>
+    <p><strong>💬 واتساب:</strong> 
+      <a href="https://wa.me/96550901403" target="_blank">+965 50901403</a> | 
+      <a href="https://wa.me/96569912947" target="_blank">+965 69912947</a>
+    </p>
+    <p><strong>📧 الإيميل:</strong> 
+      <a href="mailto:baytalshifa.kw@gmail.com">baytalshifa.kw@gmail.com</a>
+    </p>
+
+<footer>
+  <p> 2026 Bayt Al Shifa – بيت الشفاء للحجامة </p>
+  <p>تم تطوير هذا الموقع بواسطة <a href="https://github.com/montry-dev" target="_blank"><span style="color: #00AE72;"></strong>Montry™</strong></span></a></p>
+</footer>
+
+  </div>
+</section>
+
+
+<script>
+const cards = document.querySelectorAll('.card');
+const floatingShapes = document.querySelectorAll('.floating');
+
+const scrollHandler = () => {
+  const trigger = window.innerHeight * 0.9;
+  cards.forEach(card => {
+    const top = card.getBoundingClientRect().top;
+    if(top < trigger) card.classList.add('show');
+    else card.classList.remove('show');
+  });
+
+  floatingShapes.forEach((shape,i)=>{
+    const speed = (i+1)*0.2;
+    shape.style.transform = `translateY(${window.scrollY*speed}px) rotate(${window.scrollY*0.05*i}deg)`;
+  });
+}
+window.addEventListener('scroll', scrollHandler);
+window.addEventListener('load', scrollHandler);
+
+const floats=document.querySelectorAll('.floating');
+function animate(time){
+  floats.forEach((f,i)=>{
+    const y=Math.sin(time*0.001*(i+1))*20;
+    const x=Math.cos(time*0.001*(i+1))*20;
+    f.style.transform=`translate(${x}px,${y}px)`;
+  });
+  requestAnimationFrame(animate);
+}
+requestAnimationFrame(animate);
+</script>
+
+</body>
+</html>
